@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class magic8Ball : MonoBehaviour
 
 {
+
+    public TextMeshProUGUI answerText;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,11 @@ public class magic8Ball : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            int index = Random.Range(0, answers.Length);
+            answerText.text = answers[index];
+
+        }
     }
 }
