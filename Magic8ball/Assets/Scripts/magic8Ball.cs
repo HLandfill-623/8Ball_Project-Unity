@@ -15,7 +15,8 @@ public class magic8Ball : MonoBehaviour
     }
 
     private string[] answers = {"Yes", "No", "Without a doubt", "Reply hazy. Ask again",
-            "Don't count on it", "Most likely", "Outlook not good", "Better not tell you now"};
+            "Don't count on it", "Most likely", "Outlook not good", "Better not tell you now",
+            "Error: Future not found.", "Why are you asking an 8ball?", "Totally!", "No way."};
 
     void Update()
     {
